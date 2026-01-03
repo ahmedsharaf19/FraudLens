@@ -84,6 +84,10 @@ class ConsoleApp:
         show_banner()
         result = DataManager.read_csv(DATA_PATH)
         self.df = result['data_frame']
+        if not len(self.df):
+            print(f"{SPACE} ⚠️ We Can't Find Any Data Matched!")
+            wait()
+            return -1
         
         self.info = {
             'Loaded': True,
@@ -102,7 +106,6 @@ class ConsoleApp:
         ]
 
         print(f"\n{SPACE}✅ Data Loaded Successfully")
-        print(f"{SPACE}⚠️  All previous processing steps have been reset.\n")
         print(tabulate(table, headers=["Metric", "Value"], tablefmt="grid"))
         wait()
 
