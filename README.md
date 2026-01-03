@@ -1,17 +1,20 @@
+```text
 🔍💳 FRAUDLENS 💳🔍
 
-  ______   _____               _    _   _____    _        ______   _   _    _____ 
- |  ____| |  __ \      /\     | |  | | |  __ \  | |      |  ____| | \ | |  / ____|
- | |__    | |__) |    /  \    | |  | | | |  | | | |      | |__    |  \| | | (___  
- |  __|   |  _  /    / /\ \   | |  | | | |  | | | |      |  __|   | . ` |  \___ \ 
- | |      | | \ \   / ____ \  | |__| | | |__| | | |____  | |____  | |\  |  ____) |
- |_|      |_|  \_\ /_/    \_\  \____/  |_____/  |______| |______| |_| \_| |_____/
+ ______   _____               _    _   _____    _        ______   _   _    _____ 
+|  ____| |  __ \      /\     | |  | | |  __ \  | |      |  ____| | \ | |  / ____|
+| |__    | |__) |    /  \    | |  | | | |  | | | |      | |__    |  \| | | (___  
+|  __|   |  _  /    / /\ \   | |  | | | |  | | | |      |  __|   | . ` |  \___ \ 
+| |      | | \ \   / ____ \  | |__| | | |__| | | |____  | |____  | |\  |  ____) |
+|_|      |_|  \_\ /_/    \_\  \____/  |_____/  |______| |______| |_| \_| |____/
 
 
 📊 Statistical Analysis Risk Scoring & Anomaly Detection
 🧠 Banking Transactions Intelligence System
 
 © Ahmed Sharaf – ITI-AI
+```
+
 
 **FRAUDLENS** is a lightweight Python toolkit and console app for cleaning transaction data, building features, scoring customer risk, flagging suspicious transactions, and exporting reports and a dashboard.
 
