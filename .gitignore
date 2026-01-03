@@ -1,0 +1,23 @@
+# Python bytecode
+__pycache__/
+
+
+# Virtual environments
+paysim_venv/
+
+
+
+# Jupyter
+.ipynb_checkpoints/
+
+
+
+# Output & generated files
+outputs/
+report.txt
+reports/
+*.pdf
+
+# Data
+*.csv
+
