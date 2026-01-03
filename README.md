@@ -209,6 +209,37 @@ These rules are tunable if you have labeled data or want to use a different stra
 - `outputs/report.txt` — a short human-readable summary with counts and top anomalies
 - `outputs/charts/` — visuals used by the dashboard
 
+---
+
+## 📊 Dashboard & Quick Summary
+
+You can quickly produce a printable PDF dashboard that summarizes critical customers and the most important charts. Sample charts (also included in the `asset/` folder) are shown below:
+
+- ![Critical by Risk Class](asset/critical_by_risk_class.png)
+  **Critical by Risk Class** — distribution of customers across risk buckets.
+
+- ![Critical by Transaction Flag](asset/critical_by_flag.png)
+  **Critical by Transaction Flag** — shows normal vs flagged counts among critical customers.
+
+- ![Critical by Payment Type](asset/critical_by_payment_type.png)
+  **Critical by Payment Type** — breakdown of critical customers by payment type.
+
+### Generating the Dashboard PDF
+
+- From the console UI: choose **Export Dashboard** (requires scoring & flagging to be run first).
+- Programmatically:
+
+```python
+from report_generator.dashboard_generator import DashboardGenerator
+# pass the DataFrame after scoring & flagging
+dg = DashboardGenerator(scored_df)
+pdf_path = dg.export_dashboard_pdf()
+print(pdf_path)  # -> outputs/Dashboard.pdf
+```
+
+> **Note:** The PDF is saved as `outputs/Dashboard.pdf` and the charts are also saved to `outputs/charts/`. Use the PDF for fast summaries or stakeholder presentations.
+
+
 Interpretation tips:
 
 - Use `risk_class` to prioritize investigations (e.g., `critical` first).
