@@ -1,6 +1,6 @@
 import os
 import shutil
-from constants import banner, SPACE
+from src.constants import banner, SPACE
 
 def clear_screen():
     """Clear the terminal screen (Windows command)."""

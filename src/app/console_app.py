@@ -1,11 +1,11 @@
 import msvcrt
 from tabulate import tabulate
-from data_manipulator import DataManager, TransactionCleaner
-from features_builder import CustomerFeaturesBuilder, TransactionFeaturesBuilder
-from calculations import CustomerRiskScorer, TransactionFlagger
-from report_generator import ReportGenerator, DashboardGenerator
-from utils import clear_screen, print_centered, show_banner, wait, error
-from constants import *
+from src.data_manipulator import DataManager, TransactionCleaner
+from src.features_builder import CustomerFeaturesBuilder, TransactionFeaturesBuilder
+from src.calculations import CustomerRiskScorer, TransactionFlagger
+from src.report_generator import ReportGenerator, DashboardGenerator
+from src.utils import clear_screen, print_centered, show_banner, wait, error
+from src.constants import *
 
 
 class ConsoleApp:

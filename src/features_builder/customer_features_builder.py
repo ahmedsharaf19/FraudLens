@@ -1,5 +1,5 @@
 import pandas as pd
-from constants.config import E
+from src.constants.config import E
 
 
 class CustomerFeaturesBuilder:

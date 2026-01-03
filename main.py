@@ -1,5 +1,5 @@
-from app import ConsoleApp
-from constants import SPACE
+from src.app import ConsoleApp
+from src.constants import SPACE
 import os
 
 if __name__ == "__main__":

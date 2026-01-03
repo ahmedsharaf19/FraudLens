@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 from typing import List, Dict
-from constants.config import DATA_PATH, COLUMNS
+from src.constants.config import DATA_PATH, COLUMNS
 
 
 class DataManager:

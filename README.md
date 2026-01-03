@@ -1,16 +1,16 @@
 ```text
-🔍💳 FRAUDLENS 💳🔍
+🔍💳  FRAUDLENS  💳🔍
 
- ______   _____               _    _   _____    _        ______   _   _    _____ 
-|  ____| |  __ \      /\     | |  | | |  __ \  | |      |  ____| | \ | |  / ____|
-| |__    | |__) |    /  \    | |  | | | |  | | | |      | |__    |  \| | | (___  
-|  __|   |  _  /    / /\ \   | |  | | | |  | | | |      |  __|   | . ` |  \___ \ 
-| |      | | \ \   / ____ \  | |__| | | |__| | | |____  | |____  | |\  |  ____) |
-|_|      |_|  \_\ /_/    \_\  \____/  |_____/  |______| |______| |_| \_| |____/
+░██████████                                      ░██ ░██                                          
+░██                                              ░██ ░██                                          
+░██        ░██░████  ░██████   ░██    ░██  ░████████ ░██          ░███████  ░████████   ░███████  
+░█████████ ░███           ░██  ░██    ░██ ░██    ░██ ░██         ░██    ░██ ░██    ░██ ░██        
+░██        ░██       ░███████  ░██    ░██ ░██    ░██ ░██         ░█████████ ░██    ░██  ░███████  
+░██        ░██      ░██   ░██  ░██   ░███ ░██   ░███ ░██         ░██        ░██    ░██        ░██ 
+░██        ░██       ░█████░██  ░█████░██  ░█████░██ ░██████████  ░███████  ░██    ░██  ░███████  
 
-
-📊 Statistical Analysis Risk Scoring & Anomaly Detection
-🧠 Banking Transactions Intelligence System
+📊 Statistical Analysis · Risk Scoring · Anomaly Detection  
+🧠 Banking Transactions Intelligence System  
 
 © Ahmed Sharaf – ITI-AI
 ```
@@ -129,27 +129,56 @@ rg.export_all()
 
 ## 📁 Project Structure
 
+A concise, visual directory tree of the repository:
+
+```
+fraud_lens/
+├── main.py
+├── start.sh
+├── requirements.txt
+├── dataset/
+│   └── readme.txt
+├── asset/
+│   └── ...
+├── outputs/
+│   └── ...
+└── src/
+    ├── __init__.py
+    ├── utils.py
+    ├── app/
+    │   ├── __init__.py
+    │   └── console_app.py
+    ├── calculations/
+    │   ├── __init__.py
+    │   ├── risk_score.py
+    │   └── transaction_flager.py
+    ├── constants/
+    │   ├── __init__.py
+    │   ├── colors.py
+    │   ├── config.py
+    │   └── keys.py
+    ├── data_manipulator/
+    │   ├── __init__.py
+    │   ├── data_manager.py
+    │   └── transactions_cleaner.py
+    ├── features_builder/
+    │   ├── __init__.py
+    │   ├── customer_features_builder.py
+    │   └── transaction_features_builder.py
+    └── report_generator/
+        ├── __init__.py
+        ├── dashboard_generator.py
+        └── report_generator.py
+```
+
+Key files:
+
 - `main.py` — console entry point
-- `start.sh` — convenience script to create env, install deps, and run `main.py` (Unix)
-- `app/` — console app package
-  - `console_app.py` — user-facing menu and orchestration
-- `utils.py` — console helpers and banner utilities
-- `data_manipulator/` — CSV loading & cleaning
-  - `data_manager.py`
-  - `transactions_cleaner.py`
-- `features_builder/` — builders for features
-  - `customer_features_builder.py`
-  - `transaction_features_builder.py`
-- `calculations/` — scoring & flagging logic
-  - `risk_score.py`
-  - `transaction_flager.py`
-- `report_generator/` — exports and dashboard generation
-  - `report_generator.py`
-  - `dashboard_generator.py`
-- `constants/` — configuration and constants
-  - `config.py`, `keys.py`, `colors.py`
-- `dataset/` — sample datasets and readme
-- `requirements.txt` — pinned dependencies
+- `src/app/console_app.py` — user-facing menu and orchestration
+- `src/data_manipulator/` — reading & cleaning CSVs
+- `src/features_builder/` — feature construction
+- `src/calculations/` — scoring & flagging logic
+- `src/report_generator/` — exports and dashboard
 
 ---
 

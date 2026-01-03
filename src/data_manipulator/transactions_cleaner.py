@@ -1,5 +1,5 @@
 import pandas as pd
-from constants.config import DATA_PATH, NUMERIC_COLUMNS, CATEGORICAL_COLUMNS
+from src.constants.config import DATA_PATH, NUMERIC_COLUMNS, CATEGORICAL_COLUMNS
 
 
 class TransactionCleaner:
